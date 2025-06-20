@@ -1,8 +1,8 @@
-# 🧠 Run 5 AI Models on Raspberry Pi – Complete Setup Guide
+# Run 5 AI Models on Raspberry Pi – Complete Setup Guide
 
-> ⚡ This project shows how to install and run **5 different AI models** on a Raspberry Pi (tested on Raspberry Pi 4B, 64-bit OS).
+> This project shows how to install and run **5 different AI models** on a Raspberry Pi (tested on Raspberry Pi 4B, 64-bit OS).
 
-## 📦 Models Covered
+## Models Covered
 
 1. **LLM (Language Model)** – TinyLLaMA & Deepseek-Coder via Ollama
 2. **Vision (Object Detection)** – SSD Mobilenet
@@ -12,15 +12,15 @@
 
 ---
 
-## 🔧 Installation Commands
+## Installation Commands
 
-### ✅ Update and Upgrade
+### Update and Upgrade
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-### 🤖 LLM – TinyLLaMA & Deepseek-Coder via Ollama
+### LLM – TinyLLaMA & Deepseek-Coder via Ollama
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
@@ -28,7 +28,7 @@ ollama run tinyllama
 ollama run deepseek-coder:1.3b
 ```
 
-### 👁️ Vision – SSD Mobilenet (TFLite)
+### Vision – SSD Mobilenet (TFLite)
 
 ```bash
 sudo apt install wget unzip -y
@@ -41,7 +41,7 @@ unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip
 wget https://raw.githubusercontent.com/tensorflow/models/master/research/object_detection/data/mscoco_label_map.pbtxt -O labels.txt
 ```
 
-### 🗣️ STT – Whisper.cpp (Speech to Text)
+### STT – Whisper.cpp (Speech to Text)
 
 ```bash
 sudo apt install -y build-essential cmake git ffmpeg
@@ -52,7 +52,7 @@ make
 ./models/download-ggml-model.sh tiny.en
 ```
 
-### 🔊 TTS – Coqui TTS
+### TTS – Coqui TTS
 
 ```bash
 # Avoiding sudachipy and spacy[ja]
@@ -62,7 +62,7 @@ pip install TTS
 pip install bnnumerizer bnunicodenormalizer gruut[de,es,fr]==2.2.3 hangul_romanize numpy==1.24.3 --break-system-packages
 ```
 
-### 🧠 Face Filter – MediaPipe + FaceMesh
+### Face Filter – MediaPipe + FaceMesh
 
 ```bash
 pip install mediapipe opencv-python numpy 
@@ -70,11 +70,11 @@ pip install mediapipe opencv-python numpy
 
 ---
 
-## 📹 Watch the Full Video
+## Watch the Full Video
 
-> 🎥 [YouTube Link Here]() 
+> [YouTube Link Here](https://youtu.be/9OehZ2zKyt8) 
 
-## 🧠 Applications
+## Applications
 
 * Build local AI assistants
 * Do offline speech recognition
@@ -83,7 +83,7 @@ pip install mediapipe opencv-python numpy
 
 ---
 
-## 💬 Feedback
+## Feedback
 
 If you try this on your Raspberry Pi, let me know how it goes! Drop issues, ideas, or cool use cases in the comments or open a pull request.
 
